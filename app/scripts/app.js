@@ -72,6 +72,11 @@ angular
             url: '/news',
             parent: 'dashboard',
             templateUrl: 'views/dashboard/news.html'
+          })
+          .state('spots', {
+            url: '/spots',
+            parent: 'dashboard',
+            templateUrl: 'views/dashboard/spots.html'
           });
 
   });
