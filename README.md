@@ -8,6 +8,6 @@
 
 ## To run locally:
 
-# $ bower install
-# $ npm install
-# $ gulp serve
+### $ bower install
+### $ npm install
+### $ gulp serve
