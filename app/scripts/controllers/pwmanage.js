@@ -21,7 +21,7 @@ angular.module('yapp')
             LoadingService.hide();
         }).error(function (data) {
             LoadingService.hide();
-            var alertPopup = $ionicPopup.alert({
+            var alertPopup = alert({
                 title: 'Oops!',
                 template: data//'Incorrect old password!'
             });
