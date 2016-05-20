@@ -10,7 +10,7 @@
 angular.module('yapp')
   .controller('LoginCtrl', function($scope, $location) {
 
-    $scope.submit = function() {
+    $scope.login = function() {
 
       $location.path('/dashboard');
 
@@ -19,13 +19,12 @@ angular.module('yapp')
 
   });
 
-  // .controller('LoginCtrl', function ($scope, LoginService, $state, $http) {
+  // .controller('LoginCtrl', function ($scope, LoginService, $state, $http, $location) {
   //   $scope.service = LoginService;
   //
   //   $scope.login = function () {
-  //       LoadingService.show();
   //       $scope.service.loginUser($scope.data.email, $scope.data.password).success(function (data) {
-  //           $state.go('app.favourites');
+  //         $location.path('/dashboard');
   //       }).error(function (data) {
   //           var alertPopup = alert({
   //               title: 'Oops! Login failed',

@@ -42,6 +42,12 @@ angular
           templateUrl: 'views/login.html',
           controller: 'LoginCtrl'
         })
+        .state('signup', {
+          url: '/signup',
+          parent: 'base',
+          templateUrl: 'views/signup.html',
+          controller: 'SignupCtrl'
+        })
         .state('dashboard', {
           url: '/dashboard',
           parent: 'base',
