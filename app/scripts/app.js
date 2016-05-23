@@ -83,6 +83,16 @@ angular
             url: '/spots',
             parent: 'dashboard',
             templateUrl: 'views/dashboard/spots.html'
+          })
+          .state('report', {
+            url: '/report',
+            parent: 'dashboard',
+            templateUrl: 'views/dashboard/report.html'
+          })
+          .state('room', {
+            url: '/room',
+            parent: 'dashboard',
+            templateUrl: 'views/dashboard/room.html'
           });
 
   });
