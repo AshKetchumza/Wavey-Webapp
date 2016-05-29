@@ -8,12 +8,10 @@
   },
   "devDependencies": {
     "apache-server-configs": "^2.11.0",
-    "body-parser": "^1.15.1",
     "chai": "^2.1.0",
     "connect": "^3.3.4",
     "connect-livereload": "^0.5.3",
     "del": "^1.1.1",
-    "express": "^4.13.4",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-cache": "^0.2.8",
@@ -44,17 +42,11 @@
     "main-bower-files": "^2.5.0",
     "mocha": "^2.1.0",
     "mock-gulp-dest": "^0.1.1",
-    "mongoose": "^4.4.19",
     "opn": "^1.0.1",
     "serve-index": "^1.6.2",
     "serve-static": "^1.9.1",
     "wiredep": "^2.2.2",
     "yargs": "^3.3.1"
   },
-  "dependencies": {
-    "angular": "^1.5.5",
-    "body-parser": "^1.15.1",
-    "express": "^4.13.4",
-    "mongoose": "^4.4.19"
-  }
+  "dependencies": {}
 }
