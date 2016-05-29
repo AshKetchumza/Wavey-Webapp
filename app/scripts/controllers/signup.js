@@ -1,39 +1,16 @@
-'use strict';
+(function(){
+    angular.module('yapp')
 
-/**
- * @ngdoc function
- * @name yapp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of yapp
- */
-angular.module('yapp')
+    .controller('SignUpController', ['$scope', '$state', '$http',
+      function($scope, $state, $http){
 
-.controller('SignupCtrl', function ($scope, LoginService, $state) {
-    $scope.service = LoginService;
+        $scope.createUser = function(){
+          console.log('$scope.newUser');
+          $http.post('api/user/signup', $scope.newUser).success(function(res){
+          }).error(function(error){
+            console.log(error);
+          })
+        }
+    }]);
 
-    $scope.signup = function () {
-        $scope.data.username = '';
-        //$scope.data.email = '';
-        $scope.data.password = '';
-        $scope.data.confirmPassword = '';
-        $scope.modal.show();
-    };
-
-    $scope.doSignup = function () {
-        LoadingService.show();
-        $scope.service.signupUser($scope.data.username, $scope.data.email, $scope.data.password, $scope.data.confirmPassword).success(function (data) {
-            $scope.service.loginUser($scope.data.email, $scope.data.password);
-            $scope.closeSignup();
-            $scope.closeLogin();
-            LoadingService.hide();
-        }).error(function (data) {
-            LoadingService.hide();
-            var alertPopup = alert({
-                title: 'Oops! Signup failed',
-                template: data
-            });
-        });
-    };
-
-});
+}());

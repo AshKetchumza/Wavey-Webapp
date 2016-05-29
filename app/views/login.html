@@ -7,15 +7,15 @@
 
 				<div class="form-content" style="font-family: 'PressStart2PRegular' !important; font-size: 8px !important;">
 					<div class="form-group">
-						<input type="text" class="form-control input-underline input-lg" id="" placeholder="Email">
+						<input type="text" class="form-control input-underline input-lg" ng-model="login.email" placeholder="Email">
 					</div>
 
 					<div class="form-group">
-						<input type="password" class="form-control input-underline input-lg" id="" placeholder="Password">
+						<input type="password" class="form-control input-underline input-lg" ng-model="login.password" placeholder="Password">
 					</div>
 				</div>
 
-				<button type="login" ng-click="login()" class="btn btn-white btn-outline btn-lg btn-rounded" style="font-family: 'PressStart2PRegular' !important; font-size: 10px !important;">Login</button><br /><br />
+				<button ng-click="logUserIn()" class="btn btn-white btn-outline btn-lg btn-rounded" style="font-family: 'PressStart2PRegular' !important; font-size: 10px !important;">Login</button><br /><br />
 				<button ui-sref="signup" class="btn btn-white btn-outline btn-lg btn-rounded" style="font-family: 'PressStart2PRegular' !important; font-size: 10px !important;">Signup</button><br /><br />
 				<button ui-sref="regions" class="btn btn-white btn-outline btn-lg btn-rounded" style="font-family: 'PressStart2PRegular' !important; font-size: 10px !important;">Ummm no thanks</button><br /><br />
 

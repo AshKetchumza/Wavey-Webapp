@@ -8,15 +8,15 @@
 
 				<div class="form-content" style="font-family: 'PressStart2PRegular' !important; font-size: 8px !important;">
 					<div class="form-group">
-						<input type="text" class="form-control input-underline input-lg" id="" placeholder="Email">
+						<input type="text" class="form-control input-underline input-lg" ng-model="newUser.email" placeholder="Email">
 					</div>
 
 					<div class="form-group">
-						<input type="password" class="form-control input-underline input-lg" id="" placeholder="Password">
+						<input type="password" class="form-control input-underline input-lg" ng-model="newUser.password" placeholder="Password">
 					</div>
 				</div>
 
-				<button type="login" ng-click="login()" class="btn btn-white btn-outline btn-lg btn-rounded" style="font-family: 'PressStart2PRegular' !important; font-size: 10px !important;">Login</button><br /><br />
+				<button class="btn btn-white btn-outline btn-lg btn-rounded" style="font-family: 'PressStart2PRegular' !important; font-size: 10px !important;" ng-click="createUser()">Sign Up</button><br /><br />
 				<button ui-sref="login" class="btn btn-white btn-outline btn-lg btn-rounded" style="font-family: 'PressStart2PRegular' !important; font-size: 10px !important;">I have an account</button><br /><br />
 
 			</form>
